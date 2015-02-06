@@ -1,24 +1,53 @@
 
-
+/*大DIV 中的1 */
 .scroll_word{
 	margin-top:150px;
 	margin-left:50px;
-	width:500px;
+	width:600px;
 	height:400px;
 	border:2px solid red;
 	float:left;
 }
+/*  第一行文字*/
+.scroll_word span{
+	font-family: "微软雅黑";
+	font-size: 45px;
+	color:rgb(24, 188, 193);
+}
+/* 第二行文字*/
+#love_time{
+	font-family:"微软雅黑";
+	font-size:30px;
+	color:red;
+}
+#time{
+	font-family:"微软雅黑";
+	font-size:30px;
+	color:red;
+}
 
-
+/*大DIV 中的2 */
 .link_love{
 	margin-top:150px;
 	margin-left:50px;
-	width:500px;
-	height:400px;
+	width:600px;
+	height:500px;
 	border:2px solid red;
 	float:left;
 }
+/* 相对定位*/
+#shift_2{
+	position:relative;
+	left:10px;
+	top:200px;
+	
+}
+/* */
+.nav1{
+	background-image: url(img/nav1.png);
+}
 
+/*大DIV 中的3 */
 .kiss{
 	margin-top:150px;
 	margin-left:50px;

@@ -5,17 +5,55 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" type="text/css" href="main.css" />
   <title>我和我的傻妞的地方</title>
+  <script language="javascript" type="text/javascript">
+  	window.onload = function(){
+	showTime();
+	}
+  function showTime()
+  {
+  	  var date1 = new Date(2014,06,29);
+  	  var date2 = new Date();
+  	  var date3 = date2.getTime()-date1.getTime();
+      // 天数差 
+  	  var days = Math.floor(date3/(24*3600*1000));
+      // 计算出小时数 -->
+  	  var leave1=date3%(24*3600*1000);    //计算天数后剩余的毫秒数 -->
+  	  var hours=Math.floor(leave1/(3600*1000))
+      //计算相差分钟数
+  	  var leave2=leave1%(3600*1000);        //计算小时数后剩余的毫秒数
+  	  var minutes=Math.floor(leave2/(60*1000));
+      //计算相差秒数
+ 	  var leave3=leave2%(60*1000);      //计算分钟数后剩余的毫秒数
+  	  var seconds=Math.round(leave3/1000);
+	  //var str=days+" 天"+hours+" 时"+minutes+"分"+seconds+"秒";
+      document.getElementById("time").innerHTML=days+" 天"+hours+" 时"+minutes+"分"+seconds+"秒";
+	  t=setTimeout('showTime()',500)
+  }
+  </script>
 </head>
 <!-- Index页面，基本布局，力求简单  -->
 <body>
 
 <!-- 滚动显示：爱的记录-->
 <div class="scroll_word">
-	爱情记录
+	<span>安兴乐和刘盼的爱情记录<br></span>
+    <span id="love_time">&nbsp;我们已经相爱</span>
+    <span id="time"></span>
+    <!-- 这里设置爱情计时器-->
+    
+    
+    
 </div>
 <!-- 其他页面的链接 -->
-<div class="link_love">
-	
+<div class="link_love"  id="shift_2">
+	<map name="flower">
+  		<area shape="poly" coords="147,-5, 219,40, 219,120, 147,160, 74,120, 74,40" href="#" alt="这个世界" class="nav1" />
+    	<area shape="poly" coords="73,129, 145,174, 145,254, 73,294, 0,254, 0,174" href="#" alt="" class="nav2" />
+    	<area shape="poly" coords="147,261, 219,307, 219,387, 147,427, 74,387, 74,307" href="#" alt="" class="nav3" />
+  		<area shape="poly" coords="300,261, 372,307, 372,387, 300,427, 228,387, 228,307" href="#" alt="" class="nav4" />
+    	<area shape="poly" coords="379,129, 451,174, 451,254, 379,294, 306,254, 306,174" href="#" alt="" class="nav5" />
+    	<area shape="poly" coords="300,-5, 372,40, 372,120, 300,160, 228,120, 228,40" href="#" alt="" class="nav6" />
+    </map>
 </div>
 <!-- 可爱的小破孩接吻 -->
 <div class="kiss">
