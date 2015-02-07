@@ -5,8 +5,9 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" type="text/css" href="main.css" />
   <title>我和我的傻妞的地方</title>
+  <script src="../SpryAssets/SpryEffects.js" type="text/javascript"></script>
   <script language="javascript" type="text/javascript">
-  	window.onload = function(){
+window.onload = function(){
 	showTime();
 	}
   function showTime()
@@ -29,6 +30,10 @@
       document.getElementById("time").innerHTML=days+" 天"+hours+" 时"+minutes+"分"+seconds+"秒";
 	  t=setTimeout('showTime()',500)
   }
+function MM_effectGrowShrink(targetElement, duration, from, to, toggle, referHeight, growFromCenter)
+{
+	Spry.Effect.DoGrow(targetElement, {duration: duration, from: from, to: to, toggle: toggle, referHeight: referHeight, growCenter: growFromCenter});
+}
   </script>
 </head>
 <!-- Index页面，基本布局，力求简单  -->
@@ -46,14 +51,18 @@
 </div>
 <!-- 其他页面的链接 -->
 <div class="link_love"  id="shift_2">
-	<map name="flower">
-  		<area shape="poly" coords="147,-5, 219,40, 219,120, 147,160, 74,120, 74,40" href="#" alt="这个世界" class="nav1" />
-    	<area shape="poly" coords="73,129, 145,174, 145,254, 73,294, 0,254, 0,174" href="#" alt="" class="nav2" />
-    	<area shape="poly" coords="147,261, 219,307, 219,387, 147,427, 74,387, 74,307" href="#" alt="" class="nav3" />
-  		<area shape="poly" coords="300,261, 372,307, 372,387, 300,427, 228,387, 228,307" href="#" alt="" class="nav4" />
-    	<area shape="poly" coords="379,129, 451,174, 451,254, 379,294, 306,254, 306,174" href="#" alt="" class="nav5" />
-    	<area shape="poly" coords="300,-5, 372,40, 372,120, 300,160, 228,120, 228,40" href="#" alt="" class="nav6" />
-    </map>
+	<!--  这里离设定第一个叶子 爱的誓言-->
+    <div class="left1">
+	<a href="#"><img src="img/nav1.png" name="nav1" id="nav1" onMouseOver="MM_effectGrowShrink(this, 100, '100%', '110%', false, false, true)" onMouseOut="MM_effectGrowShrink(this, 100, '110%', '100%', false, false, true)"></img></a>
+	</div>
+    <!--  这里离设定第二个叶子 时光沙漏-->
+    <div class="left2">
+	<a href="#"><img src="img/nav3.png" name="nav2" id="nav2" onMouseOver="MM_effectGrowShrink(this, 100, '100%', '110%', false, false, true)" onMouseOut="MM_effectGrowShrink(this, 100, '110%', '100%', false, false, true)"></img></a>
+	</div>
+    <!--  这里离设定第三个叶子 许愿墙-->
+    <div class="left3">
+	<a href="#"><img src="img/nav5.png" name="nav3" id="nav3" onMouseOver="MM_effectGrowShrink(this, 100, '100%', '110%', false, false, true)" onMouseOut="MM_effectGrowShrink(this, 100, '110%', '100%', false, false, true)"></img></a>
+	</div>
 </div>
 <!-- 可爱的小破孩接吻 -->
 <div class="kiss">
