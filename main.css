@@ -3,7 +3,7 @@
 .scroll_word{
 	margin-top:150px;
 	margin-left:50px;
-	width:600px;
+	width:35%px;
 	height:400px;
 	border:2px solid white;
 	float:left;
@@ -30,7 +30,7 @@
 .link_love{
 	margin-top:150px;
 	margin-left:10px;
-	width:600px;
+	width:10%px;
 	height:500px;
 	border:2px solid white;
 	float:left;
@@ -77,7 +77,7 @@
 .kiss{
 	margin-top:150px;
 	margin-left:50px;
-	width:500px;
+	width:35%;
 	height:400px;
 	border:2px solid red;
 	float:left;
