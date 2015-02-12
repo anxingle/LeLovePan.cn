@@ -1,0 +1,72 @@
+body{margin:0; padding:0;}
+#kuang {
+	width: 100%;
+	background:url(img_2/bg3.jpg) top left no-repeat;
+	margin:0 auto;
+	zoom:1;
+	overflow:hidden;
+	background-size:75% 100%;
+}
+/*大DIV 中的1 */
+.scroll_word{
+	margin-top:18%;
+	margin-left:0;
+	width:20%;
+	float:left;
+}
+/*  第一行文字*/
+.scroll_word strong{
+	font-family:"Comic Sans MS", cursive;
+	font-size: 2em;
+	color:rgb(24, 188, 193);
+}
+/* 第二行文字*/
+#love_time{
+	font-family:"微软雅黑";
+	font-size:30px;
+	color:red;
+}
+#time{
+	font-family:"微软雅黑";
+	font-size:30px;
+	color:red;
+}
+
+/*大DIV 中的2 */
+.link_love{
+	margin-top:0;
+	margin-left:2%;
+	width:15%;
+	float:left;
+	zoom:1;
+	float:auto;
+	
+}
+/* 相对定位*/
+#shift_2{
+	position:relative;
+	left:0px;
+	top:4%;	
+}
+
+.kiss{
+	margin-top:2%;
+	margin-right:2%;
+	width:23%;
+	float:right;
+}
+
+
+#kuang .kiss  strong {
+	font-size: 1.5em;
+	line-height: 1.35em;
+	color:#9488b0;
+	font-family:Verdana, Geneva, sans-serif;
+}
+#kuang .scroll_word img {
+	transform:rotate(9deg);
+-ms-transform:rotate(9deg); /* Internet Explorer */
+-moz-transform:rotate(9deg); /* Firefox */
+-webkit-transform:rotate(9deg); /* Safari 和 Chrome */
+-o-transform:rotate(9deg);
+}
