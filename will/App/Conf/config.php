@@ -8,9 +8,10 @@ return array(
 	'APP_GROUP_PATH' => 'Modules',
 
 	'DB_HOST' => 'localhost',
-	'DB_USER' => 'root',
-	'DB_PWD' => 'panpan',
-	'DB_NAME' => 'think',
+	'DB_USER' => 'a0204174437',
+	'DB_PWD' => '15566011',
+	'DB_NAME' => 'a0204174437',
+	'DB_PORT'  =>  '3306',
 	'DB_PREFIX' => 'hd_',
 
 	'TMPL_VAR_IDENTIFY' => 'array',

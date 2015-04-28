@@ -55,7 +55,7 @@
               </div>
                 <canvas id="canvas" width="1100" height="680"></canvas>
             </div>
-          <div id="go_right" onmouseover="backCA();" onmouseout="backCD();"><a href="indexlink_2.html"><img src="next.png"></a></div>      
+          <div id="go_right" onmouseover="backCA();" onmouseout="backCD();"><a href="indexlink_2.php"><img src="next.png"></a></div>      
         </div>
     
     <script>
